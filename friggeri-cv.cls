@@ -274,7 +274,7 @@
 
 \DeclareNameFormat{author}{%
   \small\addfontfeature{Color=lightgray}%
-  \ifblank{#3}{}{#3\space}#1%
+  \nameparts{#1}\ifblank{\namepartgiven}{}{\namepartgiven\space}\namepartfamily%
   \ifthenelse{\value{listcount}<\value{liststop}}
     {\addcomma\space}
     {}%
