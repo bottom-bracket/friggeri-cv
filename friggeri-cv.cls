@@ -47,16 +47,13 @@
 %%%%%%%%%
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 
-\newfontfamily\thinfont{Garamond Premr Pro}
+\newfontfamily\titlefont{Garamond Premr Pro}
 \newfontfamily\headingfont{Garamond Premr Pro Smbd}
 
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Mapping=tex-text, Color=textcolor, ItalicFont=Garamond Premr Pro It, BoldFont=Garamond Premr Pro Smbd, Numbers=OldStyle]{Garamond Premr Pro}
 \setmonofont[Mapping=tex-text, ItalicFont=Garamond Premr Pro It, BoldFont=Garamond Premr Pro Smbd]{Garamond Premr Pro}
-
-%% \setmathfont{XITS Math}
 
 %%%%%%%%%%
 % Header %
@@ -66,7 +63,7 @@
 
 \newcommand{\rolefont}{%
   \fontsize{14pt}{24pt}\selectfont%
-  \thinfont%
+  \titlefont%
   \color{white}%
 }
 
@@ -78,7 +75,7 @@
     };
     \node [anchor=north] at (name.south) {%
       \fontsize{14pt}{24pt}\color{title}%
-      \thinfont #2%
+      \titlefont #2%
     };
   \end{tikzpicture}
   \vspace{2.5cm}
@@ -297,5 +294,5 @@
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=6.1cm, top=2cm, right=1.5cm, bottom=2.5cm, nohead, nofoot]{geometry}
 \RequirePackage[hidelinks]{hyperref}
