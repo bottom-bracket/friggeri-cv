@@ -101,6 +101,10 @@
     } #1#2#3%
   }%
   \stepcounter{colorCounter}%
+  % Reset the counter once we exhaust all colors
+  \ifthenelse{\equal{\value{colorCounter}}{6}}{
+    \setcounter{colorCounter}{0}
+  }{}
 }
 
 \renewcommand{\section}[1]{
