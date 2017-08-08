@@ -207,7 +207,7 @@
     \newunit%
     \printlist{publisher}%
     \setunit*{\addcomma\space}%
-    \printfield{doi}%
+    \textcolor{lightgray}{\printfield{doi}}%
     \newunit%
   }
   \par\vspace{0.3\baselineskip}
@@ -268,6 +268,10 @@
   }
   \par\vspace{0.3\baselineskip}
 }
+
+% biblatex name formatting changed with version 3.3.
+% After this change the line "\ifblank{#3}{}{#3\space}#1%" gives an error.
+% See also: http://tex.stackexchange.com/questions/327316/updating-friggeris-cv-making-it-work-with-texlive-2015-and-up-too-many-erro
 
 \DeclareNameFormat{author}{%
   \small\addfontfeature{Color=lightgray}%
