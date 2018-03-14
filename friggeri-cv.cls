@@ -196,7 +196,7 @@
 
 \DeclareBibliographyDriver{article}{%
   \printfield{title}%
-  \newblock%
+  \nopagebreak\newblock%
   \printnames{author}%
   \par%
   \newblock%
@@ -216,7 +216,7 @@
 
 \DeclareBibliographyDriver{book}{%
   \printfield{title}%
-  \newblock%
+  \nopagebreak\newblock%
   \printnames{author}%
   \par%
   \newblock%
@@ -236,7 +236,7 @@
 
 \DeclareBibliographyDriver{inproceedings}{%
   \printfield{title}%
-  \newblock%
+  \nopagebreak\newblock%
   \printnames{author}%
   \par%
   \newblock%
@@ -254,7 +254,7 @@
 
 \DeclareBibliographyDriver{misc}{%
   \printfield{title}%
-  \newblock%
+  \nopagebreak\newblock%
   \printnames{author}%
   \par%
   \newblock%
@@ -274,7 +274,7 @@
 
 \DeclareBibliographyDriver{report}{%
   \printfield{title}%
-  \newblock%
+  \nopagebreak\newblock%
   \printnames{author}%
   \par%
   \newblock%
