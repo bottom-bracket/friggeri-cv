@@ -183,8 +183,24 @@
 % Bibliography %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[style=verbose, maxnames=99, backend=biber]{biblatex}
+\RequirePackage[style=numeric, defernumbers=true, maxnames=99, backend=biber]{biblatex}
 \setlength\bibhang{0pt}
+
+\defbibenvironment{bibliography}{%
+  \list
+    {\printfield[labelnumberwidth]{labelnumber}}
+    {%
+      \setlength{\labelwidth}{\labelnumberwidth}%
+      \setlength{\leftmargin}{\labelwidth}%
+      \setlength{\labelsep}{\biblabelsep}%
+      \addtolength{\leftmargin}{-\labelwidth}% <- Changed
+      \setlength{\itemsep}{\bibitemsep}%
+      \setlength{\parsep}{\bibparsep}%
+    }%
+  \renewcommand*{\makelabel}[1]{\hss##1}%
+}
+{\endlist}
+{\item}
 
 \DeclareFieldFormat[article]{title}{#1\par}
 \DeclareFieldFormat[book]{title}{#1\par}
@@ -210,6 +226,7 @@
     \setunit*{\addcomma\space}%
     \textcolor{lightgray}{\printfield{doi}}%
     \newunit%
+    \finentry%
   }
   \par\vspace{0.3\baselineskip}
 }
@@ -230,6 +247,7 @@
     \setunit{\addcomma\space}%
     \printlist{location}%
     \newunit%
+    \finentry%
   }
   \par\vspace{0.3\baselineskip}
 }
@@ -248,6 +266,7 @@
     \setunit{\addcomma\space}%
     \printlist{location}%
     \newunit%
+    \finentry%
   }
   \par\vspace{0.3\baselineskip}
 }
@@ -268,6 +287,7 @@
     \setunit{\addcomma\space}%
     \printlist{location}%
     \newunit%
+    \finentry%
   }
   \par\vspace{0.3\baselineskip}
 }
@@ -286,6 +306,7 @@
     \setunit{\addcomma\space}%
     \printfield{year}%
     \newunit%
+    \finentry%
   }
   \par\vspace{0.3\baselineskip}
 }
