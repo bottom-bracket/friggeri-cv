@@ -71,7 +71,7 @@
   \begin{tikzpicture}[remember picture,overlay]
     \node [rectangle, fill=filltitle, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
-      \fontsize{36pt}{48pt}\color{title}\scshape #1%
+      \fontsize{24pt}{36pt}\color{title}\scshape #1%
     };
     \node [anchor=north] at (name.south) {%
       \fontsize{14pt}{24pt}\color{title}%
