@@ -1,4 +1,5 @@
 # About
+
 The `friggeri-cv` was originally developed by Adrien Friggeri. This is an updated version compatible with the latest version of LuaLaTeX. Various changes have been made to make it more suitable for academic use, including:
 
 - The default color has been changed to black-and-white.
@@ -9,6 +10,7 @@ The `friggeri-cv` was originally developed by Adrien Friggeri. This is an update
 - Some minor adjustments to font size.
 
 # Original "About" from Adrien Friggeri
+
 Latest version of my CV, typesetted in Helvetica and using colors inspired by Monokai (there is an `print` option which renders in black and white, and reverts the header to dark on light, if printing on paper is needed).
 
 Uses TikZ for the header, XeTeX and fontspec to use Helvetica Neue, biblatex to print my publications and textpos for the aside.
@@ -16,6 +18,7 @@ Uses TikZ for the header, XeTeX and fontspec to use Helvetica Neue, biblatex to 
 # License
 
 Copyright (C) 2012, Adrien Friggeri
+
 Copyright (C) 2017-2018, Zhen-Huan Hu
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
