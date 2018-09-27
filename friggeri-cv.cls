@@ -331,7 +331,7 @@
   \end{refsection}
 }
 
-\DeclareSortingTemplate{chronological}{
+\DeclareSortingScheme{chronological}{
   \sort[direction=descending]{\field{year}}
   \sort[direction=descending]{\field{month}}
 }
