@@ -150,7 +150,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\simpleentry}[3]{%
-  #1&\parbox[t]{11.8cm}{%
+  #1&\parbox[t]{\linewidth-2\fboxsep}{%
     #2%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}%
