@@ -9,6 +9,12 @@ The `friggeri-cv` was originally developed by Adrien Friggeri. This is an update
 - I also added index numbers to the bibliography.
 - Some minor adjustments to font size.
 
+# How to use
+
+This CV template is relatively easy to use.
+Download the whole git repo to your computer with `git clone <link>` like usual.
+Then, edit the `resume.tex` file as you wish. Once you're ready to compile, you can use either `xelatex` or `lualatex`.
+
 # Original "About" from Adrien Friggeri
 
 Latest version of my CV, typesetted in Helvetica and using colors inspired by Monokai (there is an `print` option which renders in black and white, and reverts the header to dark on light, if printing on paper is needed).
