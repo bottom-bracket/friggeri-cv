@@ -13,7 +13,8 @@ The `friggeri-cv` was originally developed by Adrien Friggeri. This is an update
 
 This CV template is relatively easy to use.
 Download the whole git repo to your computer with `git clone <link>` like usual.
-Then, edit the `resume.tex` file as you wish. Once you're ready to compile, you can use either `xelatex` or `lualatex`.
+Then, edit the `resume.tex`,`cv.tex` and `experience.tex` files as you wish.
+Once you're ready to compile, you can use either `xelatex` or `lualatex`.
 
 # Original "About" from Adrien Friggeri
 
