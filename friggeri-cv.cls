@@ -47,13 +47,13 @@
 %%%%%%%%%
 
 \RequirePackage[quiet]{fontspec}
+\defaultfontfeatures{Mapping=tex-text, Path=fonts/}
 
-\newfontfamily\titlefont{Garamond Premr Pro}
-\newfontfamily\headingfont{Garamond Premr Pro Smbd}
+\newfontfamily\titlefont{GaramondPremrPro}
+\newfontfamily\headingfont{GaramondPremrPro-Smbd}
 
-\defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor, ItalicFont=Garamond Premr Pro It, BoldFont=Garamond Premr Pro Smbd, Numbers=OldStyle]{Garamond Premr Pro}
-\setmonofont[Mapping=tex-text, ItalicFont=Garamond Premr Pro It, BoldFont=Garamond Premr Pro Smbd]{Garamond Premr Pro}
+\setmainfont[Color=textcolor, ItalicFont=GaramondPremrPro-It, BoldFont=GaramondPremrPro-Smbd, Numbers=OldStyle]{GaramondPremrPro}
+\setmonofont[ItalicFont=GaramondPremrPro-It, BoldFont=GaramondPremrPro-Smbd]{GaramondPremrPro}
 
 %%%%%%%%%%
 % Header %
@@ -331,7 +331,7 @@
   \end{refsection}
 }
 
-\DeclareSortingScheme{chronological}{
+\DeclareSortingTemplate{chronological}{
   \sort[direction=descending]{\field{year}}
   \sort[direction=descending]{\field{month}}
 }
@@ -342,4 +342,3 @@
 
 \RequirePackage[left=6.1cm, top=2cm, right=1.5cm, bottom=2.5cm, nohead, nofoot]{geometry}
 \RequirePackage[hidelinks]{hyperref}
-\RequirePackage{microtype}
