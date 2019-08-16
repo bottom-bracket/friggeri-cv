@@ -132,13 +132,13 @@
 
 \setlength{\tabcolsep}{0pt}
 \newenvironment{entrylist}{%
-  \begin{longtabu} to \textwidth {@{\extracolsep{\fill}}ll}
+  \begin{longtabu} to \textwidth {@{\extracolsep{\fill}}Xl}
 }{%
   \end{longtabu}
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
-  #1&\parbox[t]{11.8cm}{%
+  #1&\parbox[t]{12cm}{%
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
@@ -150,7 +150,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\simpleentry}[3]{%
-  #1&\parbox[t]{11.8cm}{%
+  #1&\parbox[t]{12cm}{%
     #2%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}%
