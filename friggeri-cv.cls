@@ -138,24 +138,25 @@
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
-  #1&\parbox[t]{12cm}{%
+  #1&\parbox[t]{0.85\textwidth}{%
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
-    #4\vspace{\parsep}%
-  }\\}
+    #4%
+  }\vspace{\parsep}\\%
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Simple list environment %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\simpleentry}[3]{%
-  #1&\parbox[t]{12cm}{%
+  #1&\parbox[t]{0.85\textwidth}{%
     #2%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}%
-    \vspace{\parsep}%
-  }\\}
+  }\vspace{\parsep}\\%
+}
 
 %%%%%%%%%%%%%%
 % Side block %
