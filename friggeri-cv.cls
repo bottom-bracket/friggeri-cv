@@ -324,6 +324,8 @@
     {}%
 }
 
+%% subbibliograhy needs to use subsection instead of subsection*, otherwise it %% will print an unwanted asterisk https://tex.stackexchange.com/questions/246524/remove-asterik-in-friggeri-template
+\defbibheading{subbibliography}[\refname]{\subsection{#1}}
 \newcommand{\printbibsection}[2]{
   \begin{refsection}
     \nocite{*}
